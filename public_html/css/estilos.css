@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-
-<!-- 
+/*
 The MIT License
 
 Copyright 2019 jprecreativo.
@@ -22,27 +20,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
--->
-<!--
-    Created on : 04-mar-2019, 17:22:30
+*/
+/* 
+    Created on : 05-mar-2019, 14:22:30
     Author     : jprecreativo
-*/-->
+*/
 
-<html>
-    <head>
-        <title>CV Creation Wizard</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
-    </head>
-    <body>
-        <div id="cv">
-            <div id="imagen">
-                <img alt="imagen" src="./FotoMía.jpg" height="200" width="150">
-            </div>
-            <div id="datosPersonales">
-                Ejemplo de texto.
-            </div>
-        </div>
-    </body>
-</html>
+#cv {
+    
+    margin: 2% 25% 2% 25%;
+}
+
+#imagen {
+    
+    float: left;
+}
+
+#datosPersonales {
+    
+    margin-left: 30%;
+}
