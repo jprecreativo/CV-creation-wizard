@@ -28,7 +28,7 @@ THE SOFTWARE.
 
 #cv {
     
-    margin: 2% 25% 2% 25%;
+    margin: 2% 10% 2% 10%;
 }
 
 #imagen {
@@ -39,4 +39,20 @@ THE SOFTWARE.
 #datosPersonales {
     
     margin-left: 30%;
+}
+
+.borde {
+    
+    border: 2px solid lightblue;
+}
+
+.fondo {
+    
+    background-color: lightyellow;
+}
+
+.datoPersonal {
+    
+    border-style: none;
+    width: 85%;
 }

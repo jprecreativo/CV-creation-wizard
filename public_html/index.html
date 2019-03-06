@@ -33,15 +33,18 @@ THE SOFTWARE.
         <title>CV Creation Wizard</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./icon.png">
         <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <script type="text/javascript" src="./js/jscolor.js" ></script>
     </head>
     <body>
         <div id="cv">
             <div id="imagen">
                 <img alt="imagen" src="./FotoMía.jpg" height="200" width="150">
             </div>
-            <div id="datosPersonales">
-                Ejemplo de texto.
+            <div id="datosPersonales" class="borde fondo">
+                <label>Nombre:&nbsp;</label>
+                <label id="nombre" class="fondo datoPersonal"></label>
             </div>
         </div>
     </body>
