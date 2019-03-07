@@ -34,6 +34,13 @@ THE SOFTWARE.
 #imagen {
     
     float: left;
+    margin-top: 1.5%;
+}
+
+#titDP {
+    
+    margin-left: 30%;
+    text-decoration: underline;
 }
 
 #datosPersonales {
