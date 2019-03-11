@@ -48,6 +48,16 @@ THE SOFTWARE.
     margin-left: 30%;
 }
 
+#resumen {
+    
+    margin-top: 5%;
+}
+
+#estudios {
+    
+    margin-top: 2.5%;
+}
+
 .borde {
     
     border: 2px solid lightblue;
@@ -62,4 +72,24 @@ THE SOFTWARE.
     
     border-style: none;
     width: 85%;
+}
+
+.titSec {
+    
+    color: blue;
+}
+
+.subSec {
+    
+    color: lightblue;
+}
+
+.detalles {
+    
+    margin-left: 2%;
+}
+
+p {
+    
+    text-align: justify;
 }
