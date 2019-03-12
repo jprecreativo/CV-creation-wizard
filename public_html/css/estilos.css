@@ -48,14 +48,9 @@ THE SOFTWARE.
     margin-left: 30%;
 }
 
-#resumen {
+#perfil {
     
     margin-top: 5%;
-}
-
-#estudios {
-    
-    margin-top: 2.5%;
 }
 
 .borde {
@@ -72,6 +67,11 @@ THE SOFTWARE.
     
     border-style: none;
     width: 85%;
+}
+
+.sec {
+    
+    margin-top: 2.5%;
 }
 
 .titSec {
