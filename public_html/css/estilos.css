@@ -21,6 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
+
 /* 
     Created on : 05-mar-2019, 14:22:30
     Author     : jprecreativo
@@ -35,6 +36,8 @@ THE SOFTWARE.
     
     float: left;
     margin-top: 1.5%;
+    max-width: 100%;
+    height: auto;
 }
 
 #titDP {
@@ -92,4 +95,21 @@ THE SOFTWARE.
 p {
     
     text-align: justify;
+}
+
+table, th, td {
+  
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    
+    width: 100%
+}
+
+th, td {
+  
+    padding: 5px;
+    text-align: center;
 }
