@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- 
+<!--
 The MIT License
 
 Copyright 2019 jprecreativo.
@@ -24,91 +24,227 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
 
-<!--
-    Created on : 04-mar-2019, 17:22:30
-    Author     : jprecreativo
-*/-->
-
 <html>
     <head>
         <title>CV Creation Wizard</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./icon.png">
-        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./js/jscolor.js" ></script>
+        <script type="text/javascript" src="./js/preview.js" ></script>
     </head>
     <body>
-        <div id="cv">
-            <div id="imagen">
-                <img alt="imagen" src="./FotoMía.jpg" height="200" width="150">
+        <div id="wizard">
+            <div id="idioma">
+                <label for="selectorIdioma">Idioma: </label>
+                <select name="idioma" id="selectorIdioma">
+                    <option value="abjasio">abjasio</option>
+                    <option value="afar">afar</option>
+                    <option value="afrikáans">afrikáans</option>
+                    <option value="aimara">aimara</option>
+                    <option value="akano">akano</option>
+                    <option value="albanés">albanés</option>
+                    <option value="alemán">alemán</option>
+                    <option value="amhárico">amhárico</option>
+                    <option value="aragonés">aragonés</option>
+                    <option value="árabe">árabe</option>
+                    <option value="armenio">armenio</option>
+                    <option value="asamés">asamés</option>
+                    <option value="avar">avar</option>
+                    <option value="avéstico">avéstico</option>
+                    <option value="azerí">azerí</option>
+                    <option value="bambara">bambara</option>
+                    <option value="baskir">baskir</option>
+                    <option value="bengalí">bengalí</option>
+                    <option value="bhoyapurí">bhoyapurí</option>
+                    <option value="bielorruso">bielorruso</option>
+                    <option value="birmano">birmano</option>
+                    <option value="bislama">bislama</option>
+                    <option value="bosnio">bosnio</option>
+                    <option value="bretón">bretón</option>
+                    <option value="búlgaro">búlgaro</option>
+                    <option value="cachemiro">cachemiro</option>
+                    <option value="camboyano">camboyano</option>
+                    <option value="canarés">canarés</option>
+                    <option value="catalán">catalán</option>
+                    <option value="chamorro">chamorro</option>
+                    <option value="checheno">checheno</option>
+                    <option value="checo">checo</option>
+                    <option value="chichewa">chichewa</option>
+                    <option value="chino">chino</option>
+                    <option value="chuan">chuan</option>
+                    <option value="chuvasio">chuvasio</option>
+                    <option value="cingalés">cingalés</option>
+                    <option value="coreano">coreano</option>
+                    <option value="corso">corso</option>
+                    <option value="cree">cree</option>
+                    <option value="croata">croata</option>
+                    <option value="córnico">córnico</option>
+                    <option value="danés">danés</option>
+                    <option value="dzongkha">dzongkha</option>
+                    <option value="eslavo">eslavo</option>
+                    <option value="eslovaco">eslovaco</option>
+                    <option value="esloveno">esloveno</option>
+                    <option value="español">español</option>
+                    <option value="esperanto">esperanto</option>
+                    <option value="estonio">estonio</option>
+                    <option value="euskera">euskera</option>
+                    <option value="ewé">ewé</option>
+                    <option value="feroés">feroés</option>
+                    <option value="finés">finés</option>
+                    <option value="fiyiano">fiyiano</option>
+                    <option value="francés">francés</option>
+                    <option value="frisón">frisón</option>
+                    <option value="fula">fula</option>
+                    <option value="gallego">gallego</option>
+                    <option value="galés">galés</option>
+                    <option value="gaélico">gaélico</option>
+                    <option value="georgiano">georgiano</option>
+                    <option value="griego">griego</option>
+                    <option value="groenlandés">groenlandés</option>
+                    <option value="guaraní">guaraní</option>
+                    <option value="guyaratí">guyaratí</option>
+                    <option value="haitiano">haitiano</option>
+                    <option value="hausa">hausa</option>
+                    <option value="hebreo">hebreo</option>
+                    <option value="herero">herero</option>
+                    <option value="hindi">hindi</option>
+                    <option value="hiri">hiri</option>
+                    <option value="húngaro">húngaro</option>
+                    <option value="ido">ido</option>
+                    <option value="igbo">igbo</option>
+                    <option value="indonesio">indonesio</option>
+                    <option value="inglés">inglés</option>
+                    <option value="interlingua">interlingua</option>
+                    <option value="inuktitut">inuktitut</option>
+                    <option value="irlandés">irlandés</option>
+                    <option value="islandés">islandés</option>
+                    <option value="italiano">italiano</option>
+                    <option value="iñupiaq">iñupiaq</option>
+                    <option value="japonés">japonés</option>
+                    <option value="javanés">javanés</option>
+                    <option value="kanuri">kanuri</option>
+                    <option value="kazajo">kazajo</option>
+                    <option value="kikuyu">kikuyu</option>
+                    <option value="kirguís">kirguís</option>
+                    <option value="kirundi">kirundi</option>
+                    <option value="komi">komi</option>
+                    <option value="kongo">kongo</option>
+                    <option value="kuanyama">kuanyama</option>
+                    <option value="kurdo">kurdo</option>
+                    <option value="lao">lao</option>
+                    <option value="latín">latín</option>
+                    <option value="letón">letón</option>
+                    <option value="limburgués">limburgués</option>
+                    <option value="lingala">lingala</option>
+                    <option value="lituano">lituano</option>
+                    <option value="luba-katanga">luba-katanga</option>
+                    <option value="luganda">luganda</option>
+                    <option value="luxemburgués">luxemburgués</option>
+                    <option value="macedonio">macedonio</option>
+                    <option value="malayalam">malayalam</option>
+                    <option value="malayo">malayo</option>
+                    <option value="maldivo">maldivo</option>
+                    <option value="malgache">malgache</option>
+                    <option value="maltés">maltés</option>
+                    <option value="manés">manés</option>
+                    <option value="maorí">maorí</option>
+                    <option value="maratí">maratí</option>
+                    <option value="marshalés">marshalés</option>
+                    <option value="mongol">mongol</option>
+                    <option value="nauruano">nauruano</option>
+                    <option value="navajo">navajo</option>
+                    <option value="ndebele">ndebele</option>
+                    <option value="ndebele">ndebele</option>
+                    <option value="ndonga">ndonga</option>
+                    <option value="neerlandés">neerlandés</option>
+                    <option value="nepalí">nepalí</option>
+                    <option value="noruego">noruego</option>
+                    <option value="noruego">noruego</option>
+                    <option value="nynorsk">nynorsk</option>
+                    <option value="occidental">occidental</option>
+                    <option value="occitano">occitano</option>
+                    <option value="ojibwa">ojibwa</option>
+                    <option value="oriya">oriya</option>
+                    <option value="oromo">oromo</option>
+                    <option value="osético">osético</option>
+                    <option value="pali">pali</option>
+                    <option value="panyabí">panyabí</option>
+                    <option value="pastú">pastú</option>
+                    <option value="persa">persa</option>
+                    <option value="polaco">polaco</option>
+                    <option value="portugués">portugués</option>
+                    <option value="quechua">quechua</option>
+                    <option value="romanche">romanche</option>
+                    <option value="ruandés">ruandés</option>
+                    <option value="rumano">rumano</option>
+                    <option value="ruso">ruso</option>
+                    <option value="sami">sami</option>
+                    <option value="samoano">samoano</option>
+                    <option value="sango">sango</option>
+                    <option value="sardo">sardo</option>
+                    <option value="serbio">serbio</option>
+                    <option value="sesotho">sesotho</option>
+                    <option value="setsuana">setsuana</option>
+                    <option value="shona">shona</option>
+                    <option value="sindhi">sindhi</option>
+                    <option value="somalí">somalí</option>
+                    <option value="suajili">suajili</option>
+                    <option value="suazi">suazi</option>
+                    <option value="sueco">sueco</option>
+                    <option value="sundanés">sundanés</option>
+                    <option value="sánscrito">sánscrito</option>
+                    <option value="tagalo">tagalo</option>
+                    <option value="tahitiano">tahitiano</option>
+                    <option value="tailandés">tailandés</option>
+                    <option value="tamil">tamil</option>
+                    <option value="tayiko">tayiko</option>
+                    <option value="tibetano">tibetano</option>
+                    <option value="tigriña">tigriña</option>
+                    <option value="tongano">tongano</option>
+                    <option value="tsonga">tsonga</option>
+                    <option value="turco">turco</option>
+                    <option value="turcomano">turcomano</option>
+                    <option value="twi">twi</option>
+                    <option value="tártaro">tártaro</option>
+                    <option value="télugu">télugu</option>
+                    <option value="ucraniano">ucraniano</option>
+                    <option value="uigur">uigur</option>
+                    <option value="urdu">urdu</option>
+                    <option value="uzbeko">uzbeko</option>
+                    <option value="valón">valón</option>
+                    <option value="venda">venda</option>
+                    <option value="vietnamita">vietnamita</option>
+                    <option value="volapük">volapük</option>
+                    <option value="wolof">wolof</option>
+                    <option value="xhosa">xhosa</option>
+                    <option value="yi">yi</option>
+                    <option value="yoruba">yoruba</option>
+                    <option value="yídish">yídish</option>
+                    <option value="zulú">zulú</option>
+                </select>
+                <label class="space" for="selectorNivel">Nivel: </label>
+                <select name="nivel" id="selectorNivel">
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                    <option value="nativo">Nativo</option>
+                </select>
+                <label class="space" for="textoComentarios">Comentarios: </label>
+                <textarea id="textoComentarios" rows="3" cols="50"></textarea>
+                <button class="btn btn-success space">
+                    <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;Añadir
+                </button>
             </div>
-            <div><h1 id="titDP">Datos personales</h1></div>
-            <div id="datosPersonales" class="borde fondo">
-                <label>Nombre:&nbsp;</label>
-                <label id="nombre" class="fondo datoPersonal">Nombre de ejemplo</label><br>
-                <label>Apellidos:&nbsp;</label>
-                <label id="apellidos" class="fondo datoPersonal">Apellido de ejemplo</label><br><br>
-                <label>Dirección:&nbsp;</label>
-                <label id="direc" class="fondo datoPersonal">Dirección de ejemplo</label><br>
-                <label>Municipio:&nbsp;</label>
-                <label id="municipio" class="fondo datoPersonal">Municipio de ejemplo</label><br><br>
-                <label>Teléfono:&nbsp;</label>
-                <label id="tel" class="fondo datoPersonal">Teléfono de ejemplo</label><br>
-                <label>Correo electrónico:&nbsp;</label>
-                <label id="email" class="fondo datoPersonal">Correo de ejemplo</label>
-            </div>
-            <div id="perfil">
-                <h2 class="titSec">Perfil</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit blandit nullam, justo vel enim litora urna eros commodo scelerisque rhoncus integer, eget per lacinia senectus quam facilisis viverra ac. Ligula mi torquent tortor class augue suspendisse ac tincidunt, dictumst litora per risus aliquam pretium massa, viverra tempor accumsan conubia velit tristique habitasse.</p>
-            </div>
-            <div class="sec">
-                <h2 class="titSec">Formación académica</h2>
-                <div class="detalles">
-                    <h3 class="subSec">Bachillerato · 2011/13</h3>
-                    <p>Ligula gravida quisque cras ac sed arcu nostra, fames conubia etiam facilisis dui tempor posuere imperdiet, proin inceptos eu mauris dignissim fringilla.</p>
-                    <h3 class="subSec">Grado en Ingeniería Informática · 2013/18</h3>
-                    <p>Conubia orci tellus felis bibendum platea interdum congue fames pretium curabitur lectus, fringilla semper vehicula in habitant neque massa tristique commodo nec ornare, phasellus euismod mattis sed praesent tortor diam ac sociis ligula.</p>
-                </div>
-            </div>
-            <div class="sec">
-                <h2 class="titSec">Experiencia laboral</h2>
-                <div class="detalles">
-                    <h3 class="subSec">Trabajo 1 · 2015/16</h3>
-                    <p>Ligula gravida quisque cras ac sed arcu nostra, fames conubia etiam facilisis dui tempor posuere imperdiet, proin inceptos eu mauris dignissim fringilla.</p>
-                    <h3 class="subSec">Trabajo 2 · 2017/18</h3>
-                    <p>Conubia orci tellus felis bibendum platea interdum congue fames pretium curabitur lectus, fringilla semper vehicula in habitant neque massa tristique commodo nec ornare, phasellus euismod mattis sed praesent tortor diam ac sociis ligula.</p>
-                </div>
-            </div>
-            <div class="sec">
-                <h2 class="titSec">Otros datos</h2>
-                <p>Conubia orci tellus felis bibendum platea interdum congue fames pretium curabitur lectus, fringilla semper vehicula in habitant neque massa tristique commodo nec ornare, phasellus euismod mattis sed praesent tortor diam ac sociis ligula.</p>
-            </div>
-            <div class="sec">
-                <h2 class="titSec">Idiomas</h2>
-                <table>
-                    <tr>
-                      <th>Idioma</th>
-                      <th>Nivel</th>
-                      <th>Comentarios</th>
-                    </tr>
-                    <tr>
-                      <td>Español</td>
-                      <td>Nativo</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Inglés</td>
-                      <td>Intermedio</td>
-                      <td>Actualmente tengo el B1 en inglés acreditado por el Servicio de Lenguas modernas de la UHU.</td>
-                    </tr>
-                    <tr>
-                      <td>Japonés</td>
-                      <td>Principiante</td>
-                      <td>Lo empecé a aprender como hobbbie. Conozco algunas palabras y expresiones.</td>
-                    </tr>
-              </table>
-            </div>
+            <div id="idiomas"></div>
+        </div>
+        <div id="botones">
+            <button id="vistaPrevia" onclick="vistaPrevia()">Vista previa</button>
+            <button id="PDF">Guardar como PDF</button>
         </div>
     </body>
 </html>
