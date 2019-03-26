@@ -28,7 +28,17 @@ THE SOFTWARE.
 
 #wizard {
     
-    margin: 2% 18% 2% 18%;
+    margin: 2% 15% 2% 15%;
+}
+
+#infoIdioma {
+    
+    color: blue;
+}
+
+#idiomas {
+    
+    margin-top: 3%;
 }
 
 #PDF {
@@ -39,6 +49,14 @@ THE SOFTWARE.
 .space {
     
     margin-left: 2%;
+}
+
+.limitIdioma {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: gray;
+    margin-left: 75%;
 }
 
 textarea {

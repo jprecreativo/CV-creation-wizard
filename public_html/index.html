@@ -29,17 +29,19 @@ THE SOFTWARE.
         <title>CV Creation Wizard</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./icon.png">
+        <link rel="icon" href="./images/icon.png">
         <link rel="stylesheet" type="text/css" href="./css/index.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./js/jscolor.js" ></script>
+        <script type="text/javascript" src="./js/index.js" ></script>
         <script type="text/javascript" src="./js/preview.js" ></script>
     </head>
     <body>
         <div id="wizard">
             <div id="idioma">
+                <span title="Introduzaca uno a uno todos los idiomas que conozca." id="infoIdioma" class="glyphicon glyphicon-info-sign"></span>
                 <label for="selectorIdioma">Idioma: </label>
                 <select name="idioma" id="selectorIdioma">
                     <option value="abjasio">abjasio</option>
@@ -235,11 +237,12 @@ THE SOFTWARE.
                     <option value="nativo">Nativo</option>
                 </select>
                 <label class="space" for="textoComentarios">Comentarios: </label>
-                <textarea id="textoComentarios" rows="3" cols="50"></textarea>
-                <button class="btn btn-success space">
+                <textarea id="textoComentarios" rows="3" cols="50" maxlength="100" placeholder="Escriba cualquier comentario que desee."></textarea>
+                <button id="añadirIdioma" class="btn btn-success space">
                     <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;Añadir
                 </button>
             </div>
+            <label id="limitIdioma" class="limitIdioma">0/100</label>
             <div id="idiomas"></div>
         </div>
         <div id="botones">
