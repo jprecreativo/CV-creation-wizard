@@ -103,14 +103,19 @@ function añadirIdioma()
         labelComentarios.innerHTML = "Comentarios:&nbsp";
         labelComentarios.className = "space";
         
-        /* Añadimos todos los datos del nuevo idioma a la sección 'idiomas. */
+        /* Añadimos todos los datos del nuevo idioma a la sección 'idiomas' en un "div" nuevo. */
         
-        idiomas.appendChild(labelIdioma);
-        idiomas.appendChild(clonSelectorIdioma);
-        idiomas.appendChild(labelNivel);
-        idiomas.appendChild(clonSelectorNivel);
-        idiomas.appendChild(labelComentarios);
-        idiomas.appendChild(clonTextoComentarios);
+        var nuevoIdioma = document.createElement("div");
+        
+        nuevoIdioma.id = "idioma" + i;
+        nuevoIdioma.style.marginTop = "2%";
+        nuevoIdioma.appendChild(labelIdioma);
+        nuevoIdioma.appendChild(clonSelectorIdioma);
+        nuevoIdioma.appendChild(labelNivel);
+        nuevoIdioma.appendChild(clonSelectorNivel);
+        nuevoIdioma.appendChild(labelComentarios);
+        nuevoIdioma.appendChild(clonTextoComentarios);
+        idiomas.appendChild(nuevoIdioma);
         
         /* Cambiamos con JQuery el valor de los selectores que hemos clonado para que coincida con lo que ha puesto el usuario. */
         
@@ -124,7 +129,31 @@ function añadirIdioma()
         labelLimit.id = "limitIdioma" + i;
         labelLimit.innerHTML = document.getElementById("limitIdioma").textContent;
         labelLimit.className = "limitIdioma";
-        document.getElementById("wizard").insertBefore(labelLimit, null);
+        labelLimit.style.marginLeft = "78%";
+        
+        /* Añado el botón de eliminar idioma */
+        
+        var eliminarIdioma = document.createElement("button");
+        var spanEliminarIdioma = document.createElement("span");
+        var textoEliminarIdioma = document.createTextNode("\xa0\xa0\xa0Eliminar");
+        
+        eliminarIdioma.id = "eliminarIdioma" + i;
+        eliminarIdioma.className = "btn btn-danger";
+        eliminarIdioma.style.marginLeft = "2.5%";
+        spanEliminarIdioma.className = "glyphicon glyphicon-minus";
+        eliminarIdioma.appendChild(spanEliminarIdioma);
+        eliminarIdioma.appendChild(textoEliminarIdioma);
+        
+        eliminarIdioma.onclick = function() {
+            
+            var n = eliminarIdioma.id.replace('eliminarIdioma', '');
+            
+            $('#idioma' + n).remove();
+            $('#limitIdioma' + n).remove();
+        };
+        
+        document.getElementById("idioma" + i).insertBefore(eliminarIdioma, null);
+        document.getElementById("idiomas").insertBefore(labelLimit, null);
         
         actualizarLimitIdioma(i++);
     };
