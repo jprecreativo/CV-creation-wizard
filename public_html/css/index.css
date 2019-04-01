@@ -47,6 +47,25 @@ THE SOFTWARE.
     margin-left: 1%;
 }
 
+.sec {
+    
+    margin-top: 2.5%;
+}
+
+.tit {
+    
+    display: inline;
+}
+
+.color {
+    
+    height: 20px;
+    width: 20px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    vertical-align: middle;
+}
+
 .space {
     
     margin-left: 2%;

@@ -40,7 +40,50 @@ THE SOFTWARE.
     </head>
     <body>
         <div id="wizard">
-            <div id="idioma">
+            <div id="datosPersonales" class="sec">
+                <h2 id="titDatosPersonales" class="tit">Datos Personales</h2>
+                <button id="colorBorde" title="Cambia el color de borde de esta sección." class="jscolor {valueElement: null, value:'000000'} color"></button>
+                <button id="colorFondo" title="Cambia el color de fondo de esta sección." class="jscolor {valueElement: null, value:'000000'} color"></button>
+                <form class="form-inline" style="margin-top: 1%;">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:&nbsp;</label>
+                        <input id="nombre">
+                    </div>
+                    <div class="form-group" style="margin-left: 10%;">
+                        <label for="direc">Dirección:&nbsp;</label>
+                        <input id="direc">
+                    </div>
+                    <div class="form-group" style="margin-left: 10%;">
+                        <label for="tel">Teléfono:&nbsp;</label>
+                        <input id="tel">
+                    </div>
+                </form>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos:&nbsp;</label>
+                        <input id="apellidos">
+                    </div>
+                    <div class="form-group" style="margin-left: 8.75%;">
+                        <label for="municipio">Municipio:&nbsp;</label>
+                        <input id="municipio">
+                    </div>
+                    <div class="form-group" style="margin-left: 8.75%;">
+                        <label for="email">Correo electrónico:&nbsp;</label>
+                        <input id="email">
+                    </div>
+                </form>
+            </div>
+            <div id="perfil" class="sec">
+                <h2 id="titPerfil" class="tit">Perfil</h2>
+                <button id="colorTitPerfil" title="Cambia el color del título de esta sección." class="jscolor {valueElement: null, value:'000000'} color"></button>
+                <textarea id="textoPefil" rows="3" cols="150" maxlength="150" placeholder="Describa su perfil profesional."></textarea>
+            </div>
+            <div id="otrosDatos" class="sec">
+                <h2 id="titOtrosDatos" class="tit">Otros datos</h2>
+                <button id="colorTitOtrosDatos" title="Cambia el color del título de esta sección." class="jscolor {valueElement: null, value:'000000'} color"></button>
+                <textarea id="textoOtrosDatos" rows="3" cols="150" maxlength="150" placeholder="Describa otros datos de interés."></textarea>
+            </div>
+            <div id="idioma" class="sec">
                 <span title="Introduzaca uno a uno todos los idiomas que conozca." id="infoIdioma" class="glyphicon glyphicon-info-sign"></span>
                 <label for="selectorIdioma">Idioma: </label>
                 <select name="idioma" id="selectorIdioma">

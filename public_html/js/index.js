@@ -28,6 +28,7 @@ window.onload = function() {
     añadirIdioma();
 };
 
+/* Actualiza el contador de caracteres de un área de texto de idioma. */
 function actualizarLimitIdioma(i)
 {
     var limitIdioma = document.getElementById("limitIdioma" + i);
@@ -52,6 +53,7 @@ function actualizarLimitIdioma(i)
     };
 }
 
+/* Añade un nuevo idioma. */
 function añadirIdioma()
 {
     var idiomas = document.getElementById("idiomas");
